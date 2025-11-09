@@ -79,6 +79,7 @@ section {
   text-shadow: 0 0 10px #1f6feb, 0 0 20px #1f6feb;
 }
 
+/* Typing animation */
 .typing {
   color: #8b949e;
   font-size: 1.2rem;
@@ -86,7 +87,7 @@ section {
   white-space: nowrap;
   overflow: hidden;
   width: 0;
-  animation: typing 4s steps(30, end) forwards, blink 0.8s infinite;
+  animation: typing 4s steps(30, end) forwards, blink 0.8s step-end infinite;
 }
 
 @keyframes typing {
@@ -95,7 +96,18 @@ section {
 }
 
 @keyframes blink {
-  50% { border-color: transparent }
+  50% { border-color: transparent; }
+}
+
+/* Hide cursor after typing */
+.typing {
+  animation: typing 4s steps(30, end) forwards, blink 0.8s step-end infinite;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.typing.done {
+  border-right: none;
 }
 
 /* Skills */
@@ -175,21 +187,6 @@ footer {
   transform: translateY(0);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  nav {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .skills ul {
-    justify-content: center;
-  }
-
-  .typing {
-    font-size: 1rem;
-  }
-}
 /* Back to Top Button */
 #backToTop {
   position: fixed;
@@ -207,6 +204,7 @@ footer {
   transform: scale(0.8);
   transition: opacity 0.3s, transform 0.3s;
   box-shadow: 0 0 10px #1f6feb;
+  z-index: 999;
 }
 
 #backToTop.show {
@@ -217,4 +215,20 @@ footer {
 #backToTop:hover {
   background-color: #1f6feb;
   box-shadow: 0 0 15px #58a6ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .skills ul {
+    justify-content: center;
+  }
+
+  .typing {
+    font-size: 1rem;
+  }
 }
