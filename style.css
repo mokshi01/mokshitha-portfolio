@@ -79,7 +79,7 @@ section {
   text-shadow: 0 0 10px #1f6feb, 0 0 20px #1f6feb;
 }
 
-/* Typing animation */
+/* Typing animation with fade-out cursor */
 .typing {
   color: #8b949e;
   font-size: 1.2rem;
@@ -87,7 +87,7 @@ section {
   white-space: nowrap;
   overflow: hidden;
   width: 0;
-  animation: typing 4s steps(30, end) forwards, blink 0.8s step-end infinite;
+  animation: typing 4s steps(30, end) forwards, blink 0.8s step-end infinite, fadeCursor 0.8s ease 4s forwards;
 }
 
 @keyframes typing {
@@ -99,15 +99,10 @@ section {
   50% { border-color: transparent; }
 }
 
-/* Hide cursor after typing */
-.typing {
-  animation: typing 4s steps(30, end) forwards, blink 0.8s step-end infinite;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-.typing.done {
-  border-right: none;
+/* Fade out the typing cursor smoothly */
+@keyframes fadeCursor {
+  from { border-right-color: #58a6ff; }
+  to { border-right-color: transparent; }
 }
 
 /* Skills */
