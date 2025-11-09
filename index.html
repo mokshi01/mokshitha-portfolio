@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seethala Mokshitha | IT Student Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      background: rgba(22, 27, 34, 0.95);
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    nav a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #1f6feb;
+    }
+
+    section {
+      padding: 100px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .home {
+      text-align: center;
+      padding-top: 120px;
+    }
+
+    .home h1 {
+      font-size: 2.5rem;
+      color: #58a6ff;
+    }
+
+    .home p {
+      margin-top: 15px;
+      font-size: 1.1rem;
+      color: #c9d1d9;
+    }
+
+    h2 {
+      color: #58a6ff;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+
+    .about p {
+      text-align: justify;
+      margin-bottom: 15px;
+    }
+
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skills li {
+      background: #161b22;
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: 1px solid #30363d;
+    }
+
+    .projects .project {
+      background: #161b22;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: 1px solid #30363d;
+    }
+
+    .projects a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    .projects a:hover {
+      color: #1f6feb;
+      text-decoration: underline;
+    }
+
+    .contact a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #161b22;
+      border-top: 1px solid #30363d;
+      color: #8b949e;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .skills ul {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <h1>Seethala Mokshitha</h1>
+    <p>IT Student | Velagapudi Ramakrishna Siddhartha Engineering College</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello, Everyone! I’m Seethala Mokshitha from Vijayawada. I’m currently pursuing my B.Tech 3rd year in Information Technology at Velagapudi Ramakrishna Siddhartha Engineering College.</p>
+    <p>I completed my schooling at Sri Chaitanya with 100%, and my Intermediate with 90%.</p>
+    <p>I have completed a virtual internship with Infosys, where I gained hands-on experience in real-time projects. I also completed an internship in Python Programming at CodingMissions IT Solutions, where I developed practical skills in coding, debugging, and logic building.</p>
+    <p>My technical skills include MS Office, and the basics of C and Python. I also earned a certification in Generative AI through Infosys Springboard.</p>
+    <p>Along with technical knowledge, I’m confident in my communication skills, team collaboration, and problem-solving abilities. I’m a quick learner, disciplined, and good at time management.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Python</li>
+      <li>Teamwork</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Impact Sense</h3>
+      <p>The objective of this project is to build a machine learning-based predictive model that estimates the impact of earthquakes in terms of magnitude, damage level, or risk zone classification. The system will utilize geophysical and environmental data like latitude, longitude, depth, seismic wave features, and geological parameters to assess the possible damage or categorize the earthquake severity. This can help in early disaster planning, emergency response, and awareness campaigns.</p>
+      <p><a href="https://github.com/mokshi01/InfosysIntern" target="_blank">🔗 View Project</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Smart Traffic Management System</h3>
+      <p>In most cities, current traffic systems cannot handle the increasing number of vehicles properly. The signals usually work in a fixed way and do not adjust to real-time traffic. Because of this, we see more congestion, long waiting times, fuel wastage, and pollution. Also, there is no quick response to accidents or sudden road issues. This is why we need a smart, data-driven system that can manage traffic more efficiently and improve road safety.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>📧 Email: <a href="mailto:mokshi.seethala@gmail.com">mokshi.seethala@gmail.com</a></p>
+    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/mokshitha-seethala-6199802a3" target="_blank">linkedin.com/in/mokshitha-seethala</a></p>
+    <p>👩‍💻 GitHub: <a href="https://github.com/mokshi01" target="_blank">github.com/mokshi01</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Seethala Mokshitha. All rights reserved.</p>
+  </footer>
+</body>
+</html>
