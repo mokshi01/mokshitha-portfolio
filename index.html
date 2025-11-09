@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seethala Mokshitha | IT Student Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home fade-in">
+    <h1 class="glow">Seethala Mokshitha</h1>
+    <h3 class="typing">IT Student | Quick Learner | Problem Solver</h3>
+    <p>Velagapudi Ramakrishna Siddhartha Engineering College</p>
+  </section>
+
+  <section id="about" class="about fade-in">
+    <h2>About Me</h2>
+    <div class="divider"></div>
+    <p>Hello, Everyone! I’m Seethala Mokshitha from Vijayawada. I’m currently pursuing my B.Tech 3rd year in Information Technology at Velagapudi Ramakrishna Siddhartha Engineering College.</p>
+    <p>I completed my schooling at Sri Chaitanya with 100%, and my Intermediate with 90%.</p>
+    <p>I have completed a virtual internship with Infosys, where I gained hands-on experience in real-time projects. I also completed an internship in Python Programming at CodingMissions IT Solutions, where I developed practical skills in coding, debugging, and logic building.</p>
+    <p>My technical skills include MS Office, and the basics of C and Python. I also earned a certification in Generative AI through Infosys Springboard.</p>
+    <p>Along with technical knowledge, I’m confident in my communication skills, team collaboration, and problem-solving abilities. I’m a quick learner, disciplined, and good at time management.</p>
+  </section>
+
+  <section id="skills" class="skills fade-in">
+    <h2>Skills</h2>
+    <div class="divider"></div>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Python</li>
+      <li>Teamwork</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects fade-in">
+    <h2>Projects</h2>
+    <div class="divider"></div>
+    <div class="project">
+      <h3>Impact Sense</h3>
+      <p>The objective of this project is to build a machine learning-based predictive model that estimates the impact of earthquakes in terms of magnitude, damage level, or risk zone classification. The system utilizes geophysical and environmental data to assess potential damage and assist in early disaster planning.</p>
+      <p><a href="https://github.com/mokshi01/InfosysIntern" target="_blank">🔗 View Project</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Smart Traffic Management System</h3>
+      <p>In most cities, current traffic systems cannot handle the increasing number of vehicles properly. This project proposes a smart, data-driven traffic management system that adapts signals in real time to reduce congestion and improve safety.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact fade-in">
+    <h2>Contact</h2>
+    <div class="divider"></div>
+    <p>📧 Email: <a href="mailto:mokshi.seethala@gmail.com">mokshi.seethala@gmail.com</a></p>
+    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/mokshitha-seethala-6199802a3" target="_blank">linkedin.com/in/mokshitha-seethala</a></p>
+    <p>👩‍💻 GitHub: <a href="https://github.com/mokshi01" target="_blank">github.com/mokshi01</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Seethala Mokshitha. All rights reserved.</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop">↑</button>
+
+  <script>
+    // Fade-in animation
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    });
+    fadeEls.forEach(el => observer.observe(el));
+
+    // Back to Top Button functionality
+    const backToTopBtn = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
